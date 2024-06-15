@@ -1,0 +1,300 @@
+{
+    "Description" : {
+        "Id" : "event_mw_omega_aStrangeRequest",
+        "Name" : "Not a Chance Encounter",
+        "Details" : "While on shore leave, sitting at a back table in a quiet bar, you're approached by a man who is too nondescript to be anything other than shady. Black market, great house intelligence, smugglers, doesn't really matter. They all look the same. Like weasels in gray suits.\r\n\r\n\"Commander {COMMANDER.LastName}, may I have a moment of your time?\"\r\n\r\nThese types are less of a bother if you hear them out, so you make a non-committal gesture to the seat across the table.\r\n\r\n\"Commander, it has come to our attention that you have recently hired the mechwarriors known as [[TGT_MW,{TGT_MW.FirstName}]] \"[[TGT_MW,{TGT_MW.Callsign}]]\" [[TGT_MW,{TGT_MW.LastName}]], [[SCN_MW,{SCN_MW.FirstName}]] \"[[SCN_MW,{SCN_MW.Callsign}]]\" [[SCN_MW,{SCN_MW.LastName}]], and [[TRT_MW,{TRT_MW.FirstName}]] \"[[TRT_MW,{TRT_MW.Callsign}]]\" [[TRT_MW,{TRT_MW.LastName}]]. My organization is willing to pay top-Cbill for your records on them.\" You sigh, not even bothering to ask for Weasel's name. You just can't bear another \"My name isn't important but what I can offer you is\" speech without losing the dinner that it looks like you won't be able to finish now.",
+        "Icon" : "uixTxrSpot_RuralTown.png"
+    },
+    "Scope" : "MechWarrior",
+    "Weight" : 50,
+    "Requirements" : {
+        "Scope" : "MechWarrior",
+        "RequirementTags" : {
+            "items" : [
+                "pilot_omega"
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "ExclusionTags" : {
+            "items" : [],
+            "tagSetSourceFile" : ""
+        },
+        "RequirementComparisons" : []
+    },
+    "AdditionalRequirements" : [
+        {
+            "Scope": "Company",
+            "Weight": "50",
+            "Requirements" : {
+                "Scope" : "Company",
+                "RequirementTags" : {
+                    "items" : [
+                        "omega_hushed_complete",
+                        "omega_comingstorm_complete"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : "omega_strangerequest_finished",
+                    "tagSetSourceFile" : ""
+                }
+            }
+        },
+        {
+            "Scope" : "Commander",
+            "RequirementTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+                "items" : [],
+                "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+                {
+                    "obj" : "Injuries",
+                    "op" : "Equal",
+                    "val" : 0,
+                    "valueConstant" : null
+                }
+            ]
+        }
+    ],
+    "AdditionalObjects" : [
+        {
+            "Scope" : "SecondaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "SecondaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [
+                        "pilot_omega"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        },
+        {
+            "Scope" : "TertiaryMechWarrior",
+            "Requirements" : {
+                "Scope" : "TertiaryMechWarrior",
+                "RequirementTags" : {
+                    "items" : [
+                        "pilot_omega"
+                    ],
+                    "tagSetSourceFile" : ""
+                },
+                "ExclusionTags" : {
+                    "items" : [],
+                    "tagSetSourceFile" : ""
+                },
+                "RequirementComparisons" : []
+            }
+        }
+    ],
+    "Options" : [
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Decline.",
+                "Details" : "Non-participation",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "nothing",
+                        "Details" : "You consider some kind of diplomatic response, but just can't find a reason to bother. He interrupted your meal, after all. You look the weasel directly in the eyes. \"No.\"\r\n\r\nThe weasel's face doesn't change at all as he gets up. \"I'm sorry to have bothered you,\" he says as he leaves.",
+                        "Icon" : null
+                    },
+                    "Weight" : 90,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "omega_strangerequest_finished"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_0",
+                        "Name" : "Thank the weasel but decline.",
+                        "Details" : "Non-participation",
+                        "Icon" : null
+                    },
+                    "RequirementList" : [],
+                    "ResultSets" : [
+                        {
+                            "Description" : {
+                                "Id" : "outcome_0_0",
+                                "Name" : "A strange reaction",
+                                "Details" : "You consider some kind of diplomatic response, but just can't find a reason to bother. He interrupted your meal, after all. You look the weasel directly in the eyes. \"No.\"\r\n\r\nThe weasel's face doesn't change at all as he gets up. \"I'm sorry to have bothered you,\" he says. As he turns to leave, a holodisk falls out of his tunic pocket and clatters to the table. The weasel reacts as if stung and with a look of desperate panic grabs the disk and hurries off. The holodisk label had the same crown and yellow triskelion image that your Omega mechwarriors have.",
+                                "Icon" : null
+                            },
+                            "Weight" : 10,
+                            "Results" : [
+                                {
+                                    "Scope" : "Company",
+                                    "Requirements" : null,
+                                    "AddedTags" : {
+                                        "items" : [
+                                            "omega_strangerequest_finished"
+                                        ],
+                                        "tagSetSourceFile" : ""
+                                    },
+                                    "RemovedTags" : {
+                                        "items" : [],
+                                        "tagSetSourceFile" : ""
+                                    },
+                                    "Stats" : null,
+                                    "Actions" : null,
+                                    "ForceEvents" : null,
+                                    "TemporaryResult" : false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Decline, but see if you can track him",
+                "Details" : "Investigate",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "nothing",
+                        "Details" : "You consider some kind of diplomatic response, but just can't find a reason to bother. He interrupted your meal, after all. You look the weasel directly in the eyes. \"No.\"\r\n\r\nThe weasel's face doesn't change at all as he gets up. \"I'm sorry to have bothered you,\" he says as he leaves.\r\n\r\n\"Sumire, do we know anyone on planet shady and looking for work?\" A few hours later you get a comm from Yang. \"Boss, I don't know what you're into down there, but our pirate contact following your weasel just got wheeled into the local morgue. Stabbed in a back alley, but you gotta see the holopic.\" You stare at the pic sent to your comm. This was a man who died deeply, deeply, afraid of something.",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "omega_strangerequest_finished"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false
+                        }
+                    ]
+                },
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "nothing",
+                        "Details" : "You consider some kind of diplomatic response, but just can't find a reason to bother. He interrupted your meal, after all. You look the weasel directly in the eyes. \"No.\"\r\n\r\nThe weasel's face doesn't change at all as he gets up. \"I'm sorry to have bothered you,\" he says as he leaves.\r\n\r\n\"Sumire, do we know anyone on planet shady and looking for work?\" A few hours later you get a comm from Sumire. \"Boss, our black market contact came through. Your weasel went straight to his ship and took off, and we've got the name, model, and registry number. Weird, though. He disappeared through a pirate jump point that isn't on our maps. But we'll send some feelers out for that ship.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 50,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "omega_strangerequest_finished",
+                                    "omega_backtrack_started"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : null,
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Description" : {
+                "Id" : "outcome_0",
+                "Name" : "Accept the money",
+                "Details" : "Accept the money",
+                "Icon" : null
+            },
+            "RequirementList" : [],
+            "ResultSets" : [
+                {
+                    "Description" : {
+                        "Id" : "outcome_0_0",
+                        "Name" : "nothing",
+                        "Details" : "You consider for a moment. These pilots may be on your ship but they clearly don't consider themselves part of your crew. Any easy money is easy money. \"Here's a bank code. I'll send you the files when transfer is confirmed.\"",
+                        "Icon" : null
+                    },
+                    "Weight" : 100,
+                    "Results" : [
+                        {
+                            "Scope" : "Company",
+                            "Requirements" : null,
+                            "AddedTags" : {
+                                "items" : [
+                                    "omega_strangerequest_finished",
+                                    "omega_kingknowsmore"
+                                ],
+                                "tagSetSourceFile" : ""
+                            },
+                            "RemovedTags" : {
+                                "items" : [],
+                                "tagSetSourceFile" : ""
+                            },
+                            "Stats" : [
+                                {
+                                    "typeString" : "System.Int32",
+                                    "name" : "Funds",
+                                    "value" : "500000",
+                                    "set" : false,
+                                    "valueConstant" : null
+                                }
+                            ],
+                            "Actions" : null,
+                            "ForceEvents" : null,
+                            "TemporaryResult" : false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
