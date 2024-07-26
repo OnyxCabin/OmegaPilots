@@ -15,7 +15,8 @@
         },
         "ExclusionTags" : {
             "items" : [
-                "pilot_rebellious"
+                "pilot_rebellious",
+                "pilot_omega"
             ],
             "tagSetSourceFile" : ""
         },

@@ -21,45 +21,6 @@
         },
         "RequirementComparisons" : []
     },
-    "AdditionalRequirements" : [
-        {
-            "Scope": "Company",
-            "Weight": "50",
-            "Requirements" : {
-                "Scope" : "Company",
-                "RequirementTags" : {
-                    "items" : [
-                        "omega_hushed_complete",
-                        "omega_comingstorm_complete"
-                    ],
-                    "tagSetSourceFile" : ""
-                },
-                "ExclusionTags" : {
-                    "items" : "omega_strangerequest_finished",
-                    "tagSetSourceFile" : ""
-                }
-            }
-        },
-        {
-            "Scope" : "Commander",
-            "RequirementTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
-            },
-            "ExclusionTags" : {
-                "items" : [],
-                "tagSetSourceFile" : ""
-            },
-            "RequirementComparisons" : [
-                {
-                    "obj" : "Injuries",
-                    "op" : "Equal",
-                    "val" : 0,
-                    "valueConstant" : null
-                }
-            ]
-        }
-    ],
     "AdditionalObjects" : [
         {
             "Scope" : "SecondaryMechWarrior",

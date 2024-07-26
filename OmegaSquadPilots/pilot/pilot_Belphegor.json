@@ -8,7 +8,7 @@
         "Gender": "Male",
         "factionID": "Davion",
         "Age": "28",
-        "Details": "While there's little known about Hartmut's past, and he certainly doesn't volunteer anything, the name gives him away. The Steiner merchant family Nachtnebel has fallen in disgrace, due to the actions of an unnamed son who would be about Hartmut's age...\r\n\r\n While Hartmut is diligent in his duties, he always seem to be able to convince others into activities, productive or not, that lead them away from their own assignments. While not disruptive, it's clearly not accidental, either.\r\n\r\nHe has a tattoo of a stylized crown on a yellow triskelion.",
+        "Details": "While there's little known about Hartmut's past, and he certainly doesn't volunteer anything, the name gives him away. The Steiner merchant family Nachtnebel has fallen in disgrace, due to the actions of an unnamed son who would be about Hartmut's age...\r\n\r\n While Hartmut is diligent in his duties, he always seem to be able to convince others into activities, productive or not, that lead them away from their own assignments. While not disruptive, it's clearly not accidental, either.\r\n\r\nHe has a tattoo of a stylized crown on a yellow triskelion.\r\n\r\n",
         "Icon": "pilot_Belphegor"
     },
     "BaseGunnery": "3",
@@ -37,7 +37,6 @@
             "pilot_military",
             "pilot_bookish",
             "pilot_tech",
-            "pilot_jinxed",
             "pilot_mechwarrior",
             "omega_name_Belphegor",
             "pilot_steiner",

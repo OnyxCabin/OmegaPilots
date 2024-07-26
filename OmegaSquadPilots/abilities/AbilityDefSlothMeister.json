@@ -6,16 +6,16 @@
 		"Icon" : "UixSvgIcon_specialAbility_HiredGuns"
 	},
 	"Type" : "Command",
-	"ShortDesc" : "Hits Bypass Armor",
+	"ShortDesc" : "Hits Slow Mechs",
     "DisplayParams" : "NeverShow",
 	"ActivationTime" : "Passive",
 	"EffectData" :
 	[
 		{
             "Description" : {
-                "Id" : "StatusEffect-BEL-SlothMeisterStructureDamage",
-                "Name" : "Technical Impairment",
-                "Details" : "Mech's hit by Belphegor never seem to work right afterward.",
+                "Id" : "StatusEffect-BEL-SlothMeisterMovementReduction",
+                "Name" : "Movement Reduced",
+                "Details" : "Belphegor aims for the joints to reduce movement",
                 "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
@@ -51,37 +51,8 @@
         },
 		{
             "Description" : {
-                "Id" : "StatusEffect-BEL-SlothMeisterAttackFloatie",
-                "Name" : "Technical Impairment",
-                "Details" : "Technical Impairment",
-                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
-            },
-            "effectType" : "FloatieEffect",
-            "nature" : "Debuff",
-            "durationData" : {
-                "duration" : 1,
-                "stackLimit" : 0,
-                "triggerLimit" : 1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "OnWeaponFire",
-                "effectTargetType" : "Creator",
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
-            },
-            "floatieData" : {
-                "targetCollection" : "Weapon",
-                "targetWeaponCategory" : "NotSet",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
-            }
-        },
-		{
-            "Description" : {
                 "Id" : "StatusEffect-BEL-HeatDamage",
-                "Name" : "Heat Damage",
+                "Name" : "Heat Damage +5",
                 "Details" : "Belphegor's laser fire heats the target, too.",
                 "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
@@ -98,15 +69,16 @@
             },
             "targetingData" : {
                 "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
                 "triggerLimit" : 2,
                 "extendDurationOnTrigger" : 0,
                 "specialRules" : "NotSet",
-                "effectTargetType" : "NotSet",
                 "range" : 0,
                 "forcePathRebuild" : false,
                 "forceVisRebuild" : false,
                 "showInTargetPreview" : true,
-                "showInStatusPanel" : true
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
             },
             "statisticData" : {
                 "appliesEachTick" : false,

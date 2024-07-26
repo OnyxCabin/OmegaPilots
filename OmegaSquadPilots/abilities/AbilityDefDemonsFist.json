@@ -16,83 +16,31 @@
                 "Id" : "StatusEffect-MOL-DemonsFistStructureDamage",
                 "Name" : "Demon's Fist",
                 "Details" : "Moloch's attacks bypass armor and deal structure damage to the target.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
             "durationData" : {
-                "duration" : -1
+                "duration" : -1,
+				"ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 5,
+                "clearedWhenAttacked" : false
             },
             "targetingData" : {
-                "effectTriggerType" : "Passive",
-                "effectTargetType" : "Creator",
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
+                "effectTriggerType" : "OnHit",
+                "effectTargetType" : "SingleTarget",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
             },
             "statisticData" : {
                 "statName" : "StructureDamagePerShot",
                 "operation" : "Float_Add",
                 "modValue" : "5.0",
                 "modType" : "System.Single",
-                "targetCollection" : "Weapon",
-                "targetWeaponCategory" : "Ballistic",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
-            }
-        },
-		{
-            "Description" : {
-                "Id" : "StatusEffect-MOL-DemonsFistAttackFloatie",
-                "Name" : "Demon's Fist",
-                "Details" : "Demon's Fist",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
-            },
-            "effectType" : "FloatieEffect",
-            "nature" : "Buff",
-            "durationData" : {
-                "duration" : 1,
-                "stackLimit" : 0,
-                "triggerLimit" : 1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "OnWeaponFire",
-                "effectTargetType" : "Creator",
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
-            },
-            "floatieData" : {
-                "targetCollection" : "Weapon",
-                "targetWeaponCategory" : "Ballistic",
-                "targetWeaponType" : "NotSet",
-                "targetAmmoCategory" : "NotSet",
-                "targetWeaponSubType" : "NotSet"
-            }
-        },
-		{
-            "Description" : {
-                "Id" : "StatusEffect-MOL-PerfectAimHitFloatie",
-                "Name" : "ARMOR BYPASSED",
-                "Details" : "ARMOR BYPASSED",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
-            },
-            "effectType" : "FloatieEffect",
-            "nature" : "Debuff",
-            "durationData" : {
-                "duration" : 1,
-                "stackLimit" : 0,
-                "triggerLimit" : 1
-            },
-            "targetingData" : {
-                "effectTriggerType" : "OnHit",
-                "effectTargetType" : "SingleTarget",
-                "showInTargetPreview" : false,
-                "showInStatusPanel" : false,
-                "hideApplicationFloatie" : true
-            },
-            "floatieData" : {
                 "targetCollection" : "Weapon",
                 "targetWeaponCategory" : "Ballistic",
                 "targetWeaponType" : "NotSet",
@@ -115,7 +63,7 @@
                 "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : -1,
+                "stackLimit" : 99,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {
@@ -123,7 +71,7 @@
                 "effectTargetType" : "SingleTarget",
                 "showInTargetPreview" : true,
                 "showInStatusPanel" : true,
-                "hideApplicationFloatie" : true
+                "hideApplicationFloatie" : false
             },
             "statisticData" : {
 				"appliesEachTick" : false,
