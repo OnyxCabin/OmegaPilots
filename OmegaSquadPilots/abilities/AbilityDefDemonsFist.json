@@ -3,7 +3,7 @@
 		"Id" : "AbilityDefDemonsFist",
 		"Name" : "Demon's Fist",
 		"Details" : "PASSIVE: Moloch's ballistic attacks hit especially hard",
-		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+        "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
 	},
 	"Type" : "Command",
 	"ShortDesc" : "Hits Bypass Armor",
@@ -53,7 +53,7 @@
                 "Id" : "StatusEffect-MOL-InstabilityDamage",
                 "Name" : "Stability Damage",
                 "Details" : "Moloch's ballistic shots hit harder than usual.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Debuff",

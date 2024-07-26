@@ -27,7 +27,9 @@
     "Incapacitated": false,
     "Morale": 0,
     "Voice": "m_vizzini01",
-    "abilityDefNames": [],
+    "abilityDefNames": [
+        "AbilityDefOmegaBackstabber"
+    ],
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [

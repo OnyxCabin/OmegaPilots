@@ -3,7 +3,7 @@
 		"Id" : "AbilityDefOmegaMarksman",
 		"Name" : "Backstabber",
 		"Details" : "When the Marksman shoots you, you'll take it and like it",
-		"Icon" : "UixSvgIcon_specialAbility_BWCL"
+        "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
 	},
 	"Type" : "Command",
 	"ShortDesc" : "Accuracy and Critical hit bonus.",
@@ -14,9 +14,9 @@
         {
             "Description" : {
                 "Id" : "StatusEffect-Ace-WeaponToHit",
-                "Name" : "Laser Precision",
+                "Name" : "Weapon Precision",
                 "Details" : "The Marksman fires with surgical precision.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",
@@ -51,7 +51,7 @@
                 "Id" : "StatusEffect-Marksman-CriticalChance",
                 "Name" : "Crit Bonus",
                 "Details" : "The Marksman knows your weaknesses.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",

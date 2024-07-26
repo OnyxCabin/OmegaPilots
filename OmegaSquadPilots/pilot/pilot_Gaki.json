@@ -27,7 +27,9 @@
     "Incapacitated": false,
     "Morale": 0,
     "Voice": "m_pro06_matthew",
-    "abilityDefNames": [],
+    "abilityDefNames": [
+        "AbilityDefOmegaSentinal"
+    ],
     "AIPersonality": "Undefined",
     "PilotTags": {
         "items": [

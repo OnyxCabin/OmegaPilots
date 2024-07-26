@@ -13,7 +13,7 @@
 	[
         {
             "Description": {
-                "Id": "StatusEffect-Defense_ToHit-T1",
+                "Id": "StatusEffect-Omega-Backstabber",
                 "Name": "HARDER TO HIT",
                 "Details": "Provides a [AMT] penalty to all attacks against this unit.",
                 "Icon": "uixSvgIcon_equipment_Gyro"
@@ -67,7 +67,7 @@
                 "Id" : "StatusEffect-Backstabber-CriticalChance",
                 "Name" : "Crit Bonus",
                 "Details" : "The Backstabber is an expert at critical strikes.",
-                "Icon" : "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
             "nature" : "Buff",

@@ -8,7 +8,7 @@
         "Gender": "Female",
         "factionID": "Davion",
         "Age": "28",
-        "Details": "Classified - Commander Eyes Only",
+        "Details": "Abigail Murphy was a vocal prodigy, auditioning for regional and system-wide opera companies at the age of nine. With training and maturity, she reached a six-octave range with enough power to shatter crystal. A trick she enjoyed bringing out at parties. But after a few years in a Federated Suns opera company, she mysteriously left the business to become a mechwarrior.\r\n\r\nAs a mechwarrior, Abigail prefers fast, high flying mechs which she uses with a surgeon's precision to core enemy mechs. She still uses her vocal talents for the benefit of her fellow mechwarriors. Even the most hardened veteran tears up at her \"Ballad of the Mechwarrior\" and \"Dirge for the Fallen.\"\r\n\r\nShe has a tattoo of a stylized crown on a yellow triskelion.\r\n\r\n",
         "Icon": "pilot_Banshee"
     },
     "BaseGunnery": "3",
@@ -28,7 +28,7 @@
     "Morale": 0,
     "Voice": "f_pro02_irish",
     "abilityDefNames": [
-        "AbilityDefOmegaReaper"
+        "AbilityDefOmegaBackstabber"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {

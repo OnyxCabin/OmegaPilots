@@ -3,7 +3,7 @@
         "Id": "AbilityDefOmegaSentinal",
         "Name": "Sentinal Buff",
         "Details": "I will not break. I will not bow.",
-        "Icon": "UixSvgIcon_specialAbility_BWCL"
+        "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
     },
     "Type": "Command",
     "ShortDesc": "Sentinal Damage Reduction and Resolve bonuses",
@@ -15,7 +15,7 @@
                 "Id": "StatusEffect-Sentinal-DamageReduction",
                 "Name": "Sentinal Damage Reduction",
                 "Details": "Sentinals take [AMT] less damage.",
-                "Icon": "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType": "StatisticEffect",
             "nature": "Buff",
@@ -48,7 +48,7 @@
                 "Id": "StatusEffect-Sentinal-Resolve",
                 "Name": "Sentinal Resolve Buff",
                 "Details": "Sentinals have +2 resolve.",
-                "Icon": "UixSvgIcon_specialAbility_BWCL"
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType": "StatisticEffect",
             "nature": "Buff",
@@ -87,6 +87,14 @@
             }
         },        
         {
+            "Description" : {
+                "Id" : "StatusEffect-Sentinal-Stability",
+                "Name" : "Sentinal Stability Damage Reduction",
+                "Details" : "Incoming stability damage reduced by [AMT].",
+                "Icon" : "uixSvgIcon_equipment_Gyro"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
             "durationData" : {
                 "duration" : -1,
                 "ticksOnActivations" : false,
@@ -108,14 +116,6 @@
                 "showInTargetPreview" : false,
                 "showInStatusPanel" : true
             },
-            "effectType" : "StatisticEffect",
-            "Description" : {
-                "Id" : "StatusEffect-Sentinal-Stability",
-                "Name" : "Sentinal Stability Damage Reduction",
-                "Details" : "Incoming stability damage reduced by [AMT].",
-                "Icon" : "uixSvgIcon_equipment_Gyro"
-            },
-            "nature" : "Buff",
             "statisticData" : {
                 "appliesEachTick" : false,
                 "effectsPersistAfterDestruction" : false,
