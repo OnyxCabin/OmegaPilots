@@ -7,7 +7,7 @@
 	},
 	"Type" : "Command",
 	"ShortDesc" : "Hits Slow Mechs",
-    "DisplayParams" : "NeverShow",
+    "DisplayParams" : "ShowInPilotToolTip",
 	"ActivationTime" : "Passive",
 	"EffectData" :
 	[

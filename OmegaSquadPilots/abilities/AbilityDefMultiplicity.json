@@ -1,0 +1,104 @@
+{
+	"Description" : {
+		"Id" : "AbilityDefMultiplicity",
+		"Name" : "Multiplicity",
+		"Details" : "PASSIVE: Legion seems to be everywhere at once",
+        "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
+	},
+	"Type" : "Command",
+	"ShortDesc" : "Multiplicity",
+    "DisplayParams" : "ShowInPilotToolTip",
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+		{
+            "Description" : {
+                "Id" : "StatusEffect-LEG-MultiplicityMissileDamage",
+                "Name" : "Missile Damage Increased",
+                "Details" : "Legion seems to fire more missiles than he has tubes",
+                "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
+            },
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "durationData" : {
+                "duration" : -1,
+				"ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 5,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData" : {
+                "statName" : "Missile Increased Damage",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.1",
+                "modType" : "System.Single",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "Missile",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            }
+        },
+		{
+            "Description": {
+                "Id": "StatusEffect-LEG-MultiplicityHitDefense",
+                "Name": "Multiplicity Hit Defense",
+                "Details": "Legion Tends To Confuse Targeting Systems",
+                "Icon": "uixSvgIcon_status_ECM-ghost"
+            },
+            "effectType": "StatisticEffect",
+            "nature": "Buff",
+            "durationData": {
+                "duration": -1,
+                "ticksOnActivations": false,
+                "useActivationsOfTarget": false,
+                "ticksOnEndOfRound": false,
+                "ticksOnMovements": false,
+                "stackLimit": 1,
+                "clearedWhenAttacked": false
+            },
+            "targetingData" : {
+                "effectTriggerType": "Passive",
+                "triggerLimit": 0,
+                "extendDurationOnTrigger": 0,
+                "specialRules": "NotSet",
+                "effectTargetType": "Creator",
+                "range": 0,
+                "forcePathRebuild": false,
+                "forceVisRebuild": false,
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : false
+            },
+            "statisticData": {
+                "appliesEachTick": false,
+                "effectsPersistAfterDestruction": false,
+                "statName": "ToHitThisActor",
+                "operation": "Float_Add",
+                "modValue": "3.0",
+                "modType": "System.Single",
+                "additionalRules": "NotSet",
+                "targetCollection": "NotSet",
+                "targetWeaponCategory": "NotSet",
+                "targetWeaponType": "NotSet",
+                "targetAmmoCategory": "NotSet",
+                "targetWeaponSubType": "NotSet"
+            }
+        }
+	]
+}

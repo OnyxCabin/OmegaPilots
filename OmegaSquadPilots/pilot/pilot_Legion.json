@@ -28,7 +28,7 @@
     "Morale": 0,
     "Voice": "m_overload02",
     "abilityDefNames": [
-        "AbilityDefOmegaBackstabber"
+        "AbilityDefMultiplicity"
     ],
     "AIPersonality": "Undefined",
     "PilotTags": {

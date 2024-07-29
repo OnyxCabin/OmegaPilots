@@ -7,7 +7,7 @@
 	},
 	"Type" : "Command",
 	"ShortDesc" : "Hits Bypass Armor",
-    "DisplayParams" : "NeverShow",
+    "DisplayParams" : "ShowInPilotToolTip",
 	"ActivationTime" : "Passive",
 	"EffectData" :
 	[

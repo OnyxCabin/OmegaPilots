@@ -7,7 +7,7 @@
 	},
 	"Type" : "Command",
 	"ShortDesc" : "Movement and Critical hit bonus.",
-    "DisplayParams" : "NeverShow",
+    "DisplayParams" : "ShowInPilotToolTip",
 	"ActivationTime" : "Passive",
 	"EffectData" :
 	[
