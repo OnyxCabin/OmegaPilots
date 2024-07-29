@@ -7,7 +7,7 @@
     },
     "Type": "Command",
     "ShortDesc": "Reaper Heat and Resolve bonuses",
-    "DisplayParams": "NeverShow",
+    "DisplayParams": "ShowInPilotToolTip",
     "ActivationTime": "Passive",
     "EffectData": [
         {
@@ -21,15 +21,10 @@
             "nature": "Buff",
             "durationData" : {
                 "duration" : -1,
-				"ticksOnActivations" : false,
-                "useActivationsOfTarget" : false,
-                "ticksOnEndOfRound" : false,
-                "ticksOnMovements" : false,
-                "stackLimit" : 5,
-                "clearedWhenAttacked" : false
+                "stackLimit" : 1
             },
             "targetingData": {
-                "effectTriggerType": "OnActivation",
+                "effectTriggerType": "Passive",
                 "effectTargetType": "Creator",
                 "showInTargetPreview": true,
                 "showInStatusPanel": true,
@@ -95,11 +90,10 @@
                 "stackLimit" : -1
             },
             "targetingData" : {
-                "effectTriggerType" : "Passive",
-                "effectTargetType" : "Creator",
-                "showInTargetPreview" : true,
-                "showInStatusPanel" : true,
-                "hideApplicationFloatie" : true
+                "effectTriggerType": "Passive",
+                "effectTargetType": "Creator",
+                "showInTargetPreview": true,
+                "showInStatusPanel": true
             },
             "statisticData" : {
                 "appliesEachTick" : false,
