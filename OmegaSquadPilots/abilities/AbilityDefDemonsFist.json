@@ -19,7 +19,7 @@
                 "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
-            "nature" : "Buff",
+            "nature" : "Debuff",
             "durationData" : {
                 "duration" : -1,
 				"ticksOnActivations" : false,
@@ -76,7 +76,7 @@
             "statisticData" : {
 				"appliesEachTick" : false,
                 "effectsPersistAfterDestruction" : false,
-                "statName" : "Instability",
+                "statName" : "ReceivedInstabilityMultiplier",
                 "operation" : "Float_Multiply",
 				"modValue" : "1.25",
 				"modType" : "System.Single",

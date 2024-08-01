@@ -43,7 +43,7 @@
                 "hideApplicationFloatie" : false
             },
             "statisticData" : {
-                "statName" : "Missile Increased Damage",
+                "statName" : "DamagePerShot",
                 "operation" : "Float_Multiply",
                 "modValue" : "0.1",
                 "modType" : "System.Single",
@@ -58,7 +58,7 @@
             "Description": {
                 "Id": "StatusEffect-LEG-MultiplicityHitDefense",
                 "Name": "Multiplicity Hit Defense",
-                "Details": "Legion Tends To Confuse Targeting Systems",
+                "Details": "Legion Confuses Targeting Systems",
                 "Icon": "uixSvgIcon_status_ECM-ghost"
             },
             "effectType": "StatisticEffect",
