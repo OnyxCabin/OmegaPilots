@@ -45,7 +45,7 @@
             "statisticData" : {
                 "statName" : "DamagePerShot",
                 "operation" : "Float_Multiply",
-                "modValue" : "0.1",
+                "modValue" : "1.1",
                 "modType" : "System.Single",
                 "targetCollection" : "Weapon",
                 "targetWeaponCategory" : "Missile",

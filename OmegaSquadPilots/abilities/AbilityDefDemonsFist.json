@@ -19,7 +19,7 @@
                 "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
-            "nature" : "Debuff",
+            "nature" : "Buff",
             "durationData" : {
                 "duration" : -1,
 				"ticksOnActivations" : false,
@@ -56,27 +56,27 @@
                 "Icon" : "UixSvgIcon_specialAbility_HiredGuns"
             },
             "effectType" : "StatisticEffect",
-            "nature" : "Debuff",
+            "nature" : "Buff",
             "durationData" : {
                 "duration" : -1,
 				"ticksOnActivations" : false,
                 "useActivationsOfTarget" : false,
                 "ticksOnEndOfRound" : false,
                 "ticksOnMovements" : false,
-                "stackLimit" : 99,
+                "stackLimit" : -1,
                 "clearedWhenAttacked" : false
             },
             "targetingData" : {
-                "effectTriggerType" : "OnHit",
-                "effectTargetType" : "SingleTarget",
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "Creator",
                 "showInTargetPreview" : true,
                 "showInStatusPanel" : true,
-                "hideApplicationFloatie" : false
+                "hideApplicationFloatie" : true
             },
             "statisticData" : {
 				"appliesEachTick" : false,
                 "effectsPersistAfterDestruction" : false,
-                "statName" : "ReceivedInstabilityMultiplier",
+                "statName" : "Instability",
                 "operation" : "Float_Multiply",
 				"modValue" : "1.25",
 				"modType" : "System.Single",
